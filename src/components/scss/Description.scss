@@ -1,0 +1,92 @@
+.description-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.3); /* Black w/ opacity */
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 15px black;
+    border-radius: 10px;
+    font-weight: bold;
+    background-size: cover;
+    
+    .close{
+        width: 2rem;
+        padding-bottom: 1rem;
+    }
+}
+.description-modal::-webkit-scrollbar{
+    display: none;
+}
+
+.top-section{
+    padding: 1rem;
+    padding-bottom: 5rem;
+    // background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+    background-position: center;
+    background-size: cover;
+    button{
+        text-align: right;
+        color: white;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    .title{
+        font-size: 2rem;
+        padding: 1rem;
+        padding-left: 0rem;
+
+    }
+    .release-container{
+        padding: 1rem;
+        padding-left: 0rem;
+    }
+    .poster-container{
+        align-self: center;
+        display: flex;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .description-poster{
+        filter: drop-shadow(0px 0px 5px black);
+        border-radius: 10px;
+        margin: auto;
+        max-height: 30rem;
+
+    }
+    .star{
+        width: 20px;
+        height: 20px;
+        margin-right: 1rem;
+    }
+}
+
+.trailer-section{
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem;
+    .video-container{
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+        filter: drop-shadow(0px 0px 5px black);
+        iframe{
+            border: 0;
+            height: 100%;
+            position: fixed;
+            left: 50%;
+            top: 0%;
+            transform: translate(-50%, 0%);
+            width: 50%;
+            height: 50%;
+            
+        }
+    }
+}

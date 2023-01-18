@@ -1,0 +1,46 @@
+.logo{
+    width: 15rem;
+}
+
+.menubar{
+    font-size: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+}
+
+.menu{
+    font-weight: bold;
+    margin-left: auto;
+    color: white;
+}
+.menu:hover{
+    filter: brightness(50%);
+    color: white;
+}
+.mobile-menu{
+    .menu:hover{
+        filter: brightness(100%);
+    }
+    a{
+        color: white;
+    }
+    a:hover{
+        filter: brightness(50%);
+        color: white;
+    }
+}
+.section{
+    margin-top: 1rem;
+
+    h1{
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .section-title{
+        margin-left: 1rem;
+    }
+}
+
